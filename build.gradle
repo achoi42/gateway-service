@@ -25,14 +25,12 @@ repositories {
     mavenCentral()
 }
 
-
 ext {
     springCloudVersion = 'Finchley.SR1'
     springCloudServicesVersion = '2.0.1.RELEASE'
 }
 
 dependencies {
-//    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile("io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry")
     compile('org.springframework.cloud:spring-cloud-starter-netflix-zuul')
     testCompile('org.springframework.boot:spring-boot-starter-test')
